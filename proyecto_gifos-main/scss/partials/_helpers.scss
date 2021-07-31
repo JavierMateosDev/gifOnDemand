@@ -1,0 +1,20 @@
+// Helper para los iconos de redes sociales en el footer
+
+%social-media-icons {
+    display: block;
+    width: rem(20px);
+    height: rem(20px);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+// Helper para el titulo de favoritos y mis gifos
+
+%h2-title {
+    font-family: $fontM;
+    font-size: rem(20px);
+    font-weight: $boldM;
+    color: $purple;
+    text-align: center;
+    line-height: rem(30px);
+}

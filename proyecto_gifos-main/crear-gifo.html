@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>GIFOS</title>
+</head>
+<body>
+
+    <div class="superior-line"></div>
+
+    <header>
+
+        <div class="flex-container">
+
+            <div class="logo-container-mobile">
+                <a href="index.html"><img src="assets/logo-mobile.png" alt="Logo GIFOS"></a>
+            </div>
+            <div class="logo-container-mobile-noct">
+                <a href="index.html"><img src="assets/logo-mobile-modo-noct-01.png" alt="Logo GIFOS"></a>
+            </div>
+            <div class="logo-container-desktop">
+                <a href="index.html"><img src="assets/logo-desktop-01.png" alt="Logo GIFOS"></a>
+            </div>
+            <div class="logo-container-desktop-noct">
+                <a href="index.html"><img src="assets/Logo-modo-noc-01.png" alt="Logo GIFOS"></a>
+            </div>
+
+            <div class="menu">
+
+                <div id="hamburger"></div>
+                
+                <nav>
+                    <ul id="navUl">
+                        <li id="darkMode" class="textMenu">Modo Nocturno</li>
+                        <li id="favoritesLink" class="textMenu"><a href="favoritos.html">Favoritos</a></li>
+                        <li class="textMenu"><a href="mis-gifos.html">Mis GIFOS</a></li>
+                        <li class="hide-marker"><a class="plus-button" href="crear-gifo.html"></a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section id="createGifSection">
+
+        <div class="createGifContainer">
+
+            <div class="camaraContainer">
+                <div class="camara"></div>
+                <div class="camara-light"></div>
+            </div>
+
+            <div class="square">
+                <div class="square-lines">
+                    <div id="createGifText">
+                        <h2 id="createGifTitle">Aquí podrás<br>crear tus propios <span class="aqua-title">GIFOS</span></h2>
+                        <p id="createGifTextFirstLine">¡Crea tu GIFO en sólo 3 pasos!</p>
+                        <p id="createGifTextSecondLine">(sólo necesitas una cámara para grabar un video)</p>
+                    </div>
+                    <div class="video-container">
+                        <video id="video" src=""></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="numbers-and-timer">
+            <div class="page-numbers">
+                <button id="numberOne">1</button>
+                <button id="numberTwo">2</button>
+                <button id="numberThree">3</button>
+            </div>
+
+            <div id="timer" class="timer-container">
+                <p id="hours">00</p>
+                <p>:</p>
+                <p id="minutes">00</p>
+                <p>:</p>
+                <p id="seconds">00</p>
+            </div>
+        </div>
+
+        <p id="repeatCaption" class="repeat-caption">REPETIR CAPTURA</p>
+
+        <div class="movieIlustration"></div>
+        
+        <div class="line"></div>
+
+        <div id="beginBtn" class="btn-see-more">
+            <button>COMENZAR</button>
+        </div>
+
+        <div id="recordBtn" class="btn-see-more">
+            <button>GRABAR</button>
+        </div>
+
+        <div id="stopBtn" class="btn-see-more">
+            <button>FINALIZAR</button>
+        </div>
+
+        <div id="uploadBtn" class="btn-see-more">
+            <button>SUBIR GIFO</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="social-media">
+            <p class="share-text">Compartir en:</p>    
+            <ul>
+                <li><a class="facebook-icon" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"></a></li>
+                <li><a class="twitter-icon" href="https://twitter.com/" target="_blank" rel="noopener noreferrer"></a></li>
+                <li><a class="instagram-icon" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"></a></li>
+            </ul>
+        </div>
+        <p class="copy-text">© GIFOS 2020 All Rights Reserved.</p>
+    </footer>
+    
+    <div class="inferior-line"></div>
+
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="js/variables.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="js/create-gif.js"></script>
+    
+</body>
+</html>

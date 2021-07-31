@@ -1,0 +1,91 @@
+header .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 22px 24px;
+}
+
+.logo-container-mobile-noct,
+.logo-container-desktop,
+.logo-container-desktop-noct {
+    display: none;
+}
+
+.logo-container-mobile {
+    body.dark & {
+    display: none;
+    }
+}
+.logo-container-mobile-noct {
+    body.dark & {
+    display: block;
+    }
+}   
+
+.textMenu {
+    font-family: $fontM;
+    font-size: rem(15px);
+    font-weight: $boldM;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 60px;
+    list-style: none;
+    border-bottom: 1px solid rgba(255,255,255, 0.5);
+    cursor: pointer;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.hide-marker {
+    display: none;
+}
+
+// ---- ---- ---- ---- ---- HAMBURGER MENU ---- ---- ---- ---- ----
+
+.menu nav ul {  
+    display: none;
+}
+
+#navUl.active {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 95px;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(87,46,229,0.90);
+
+    body.dark & {
+        background: $black;
+    }
+}
+
+#hamburger {
+    position: relative;
+    background-image: url('../assets/burger.svg');
+    width: rem(15px);
+    height: rem(15px);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+    body.dark & {
+        background-image: url('../assets/burger-modo-noct.svg');
+    }
+}
+
+#hamburger.active {
+    background-image: url('../assets/close.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    body.dark & {
+            background-image: url('../assets/close-modo-noct.svg');
+        }
+}

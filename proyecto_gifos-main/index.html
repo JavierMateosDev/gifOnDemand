@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>GIFOS</title>
+</head>
+<body>
+
+    <div class="superior-line"></div>
+
+    <header>
+
+        <div class="flex-container">
+
+            <div class="logo-container-mobile">
+                <a href="index.html"><img src="assets/logo-mobile.png" alt="Logo GIFOS"></a>
+            </div>
+            <div class="logo-container-mobile-noct">
+                <a href="index.html"><img src="assets/logo-mobile-modo-noct-01.png" alt="Logo GIFOS"></a>
+            </div>
+            <div class="logo-container-desktop">
+                <a href="index.html"><img src="assets/logo-desktop-01.png" alt="Logo GIFOS"></a>
+            </div>
+            <div class="logo-container-desktop-noct">
+                <a href="index.html"><img src="assets/Logo-modo-noc-01.png" alt="Logo GIFOS"></a>
+            </div>
+
+            <div class="menu">
+
+                <div id="hamburger"></div>
+                
+                <nav>
+                    <ul id="navUl">
+                        <li id="darkMode" class="textMenu">Modo Nocturno</li>
+                        <li class="textMenu"><a id="favoritesLink" href="favoritos.html">Favoritos</a></li>
+                        <li class="textMenu"><a href="mis-gifos.html">Mis GIFOS</a></li>
+                        <li class="hide-marker"><a class="plus-button" href="crear-gifo.html"></a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section id="searchBarSection">
+
+        <h1>Inspírate, busca, guarda, y crea <br class="br-title">los mejores <span class="aqua-title">GIFOS</span></h1>
+
+        <div class="home-ilustration">
+            <img src="assets/ilustra_header.svg" alt="Ilustración de tres personas saludando">
+        </div>
+
+        <form class="input-container">
+            <div>
+                <div id="addLupa">
+                    <div id="insertLupa"></div>
+                    <input id="searchInput" class="search-input" type="text" placeholder="Busca GIFOS y más" value="">
+                </div>
+                
+                <input id="btnSearch" class="btn-search" type="submit" value="">
+            </div>
+            <ul id="suggestionsList"></ul>
+        </form>
+
+        <h3 id="trendingTitle">Trending:</h3>
+        <p id="trendingText"></p>
+
+        <hr class="divider">
+
+    </section>
+
+    <section id="searchResults">
+
+        <h2 id="titleSearchResult">Mascotas</h2>
+
+        <div id="searchResultsGifs" class="grid-container-results"></div>
+
+        <div id="btn-see-more" class="btn-see-more">
+            <button>VER MÁS</button>
+        </div>
+        
+    </section>
+
+    <div id="noResultsOnSearch">
+        <div class="no-results-icon"></div>
+        <p>Intenta con otra búsqueda.</p>
+    </div>
+
+    <div id="gifsGallery" class="show-gallery hide-gallery">
+
+        <div id="closeGallery"></div>
+
+        <div class="expand-flex-container">
+            <div class="btn-left"></div>
+
+            <div class="expanded-gif-container">
+                <img src="" alt="" id="expandedGif">
+            </div>
+
+            <div class="btn-right"></div>
+        </div>
+        
+        <div class="gallery-text-and-buttons">
+            <div class="gallery-text">
+                <p id="galleryUser"></p>
+                <p id="galleryGifTitle"></p>
+            </div>
+        
+            <div class="gallery-buttons"></div>
+        </div>
+
+    </div>
+
+    <section id="trendingSection">
+
+        <h2>Trending GIFOS</h2>
+        <p class="text-trending-section">Mira los últimos GIFOS de nuestra comunidad.</p>
+
+        <div class="trending-results">
+
+            <div class="btn-left btn-left-trending"></div>
+
+            <div class="gifs-slider"></div>
+
+            <div class="btn-right btn-right-trending"></div>
+
+        </div>
+        
+
+    </section>
+
+    <footer>
+        <div class="social-media">
+            <p class="share-text">Compartir en:</p>    
+            <ul>
+                <li><a class="facebook-icon" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"></a></li>
+                <li><a class="twitter-icon" href="https://twitter.com/" target="_blank" rel="noopener noreferrer"></a></li>
+                <li><a class="instagram-icon" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"></a></li>
+            </ul>
+        </div>
+        <p class="copy-text">© GIFOS 2020 All Rights Reserved.</p>
+    </footer>
+    
+    <div class="inferior-line"></div>
+
+    <script src="js/variables.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/suggestions-list.js"></script>
+    <script src="js/hover.js"></script>
+    <script src="js/gifs-gallery.js"></script>
+    <script src="js/trending.js"></script>
+
+</body>
+</html>
